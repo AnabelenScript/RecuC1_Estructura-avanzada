@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            ARTIE
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styleArt.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    </head> 
+<body id="fondo2">
+    <div class="content">
+        <div class="navbar">
+                <span class="open-btn"onclick="openNav()">&#9776;</span>
+                <h1 id="logop">ARTIE</h1>
+                <a href="productos.html" id="Productos">Productos</a></p>
+                <span class="open-contacto" onclick="openContacto()">Llámenos</span>  
+                <span class="abrir-user" onclick="openUser()"><i class="fas fa-user"></i></span>
+                <a href="carritoCompra.html" onclick="toggleForm()">
+                <i class='bx bx-cart' id="carrito"></i></a>
+        </div>
+     <div id="botones">
+      <button class="enlace" id="mostrarTodos">Todos los productos</button>
+      <button class="enlace" id="mostrarMenor">Primer producto de la lista</button>
+      <button class="enlace" id="mostrarMayor">Ultimo producto de la lista</button>
+      
+</div>
+<div id="productForm">
+    <div id="contenedorProductos"></div>
+    <form id="formP">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <label><br>Selecciona una categoría:</label>
+        <select id="category">
+            <option value="esculturas">Esculturas</option>
+            <option value="pintura">Pintura</option>
+            <option value="fotografia">Fotografía</option>
+            <option value="grabado">Grabado</option>
+        </select>
+        <div>
+            <label for="price"><br>Price:</label>
+            <input type="number" id="price" required> 
+        </div><br>
+        <button id="addProductButton">Add Product</button>
+    </form>
+    
+</div>
+    <div class="overlay" id="overlay"></div>
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="pinturas.html">Pintura</a>
+        <a href="escultura.html">Escultura</a>
+        <a href="fotografia.html">Fotografia</a>
+        <a href="grabado.html">Grabado</a>
+      </div>
+      
+      
+      <div class="pantalla" id="pantalla"></div>
+
+<div class="userbar" id="userbar">
+    <i class="fas fa-user" id="usericono"></i>
+  <a href="javascript:void(0)" class="cierre-user" onclick="closeUser()">&times;</a>
+  <p id="perfil">Perfil</p>
+ 
+</div>
+
+
+
+<div class="pantalla2" id="pantalla2"></div>
+<div class="contactobar" id="contactobar">
+  <a href="javascript:void(0)" class="close-contacto" onclick="closeContacto()">&times;</a>
+  <div class="infocontacto">
+    <p style="font-size: 18px;">
+        Llámenos
+    </p><br>
+    <p>
+        Donde sea que esté, estaremos encantados de atenderle
+    </p><br>
+    <i class='bx bxs-phone'></i><p>+52 9613372298</p><br><br>
+    <i class='bx bx-envelope'></i> <p>galeriaArtie@hotmail.com</p><br><br>
+    <i class='bx bxs-building-house'> </i><p>CDMX Lomas <br>
+         Ave. Prado Norte 525, Col. Lomas de Chapultepec, 11000, CDMX, México</p>
+  </div>
+</div>
+</div>
+ <script type="module" src="../src/controllers/script.js"></script>
+        <script src="../src/controllers/barraslaterales.js"></script>
+        
+</body>
+<footer id="footer">
+    <p style="text-align: center; font-size: 20px;">
+        ARTIE
+    </p>
+    <p>
+        <br>
+        AYUDA <br> <br>
+        La informacion en esta sucursal esta disponible: <br>
+        Lunes a Viernes de 10 am- 6 pm y Sábado de 12 am- 4 pm <br> llamándonos al +52 9613372298<br>
+        También puede contactarnos o enviarnos un correo electrónico <br> a la dirección galeriaArtie@hotmail.com
+    </p>
+</footer>
+</html>
